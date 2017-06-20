@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title></title>
+        <style type="text/css">
+            table {
+                margin-right: auto;
+                margin-left: auto;
+            }
+            img {
+                width: 70%;
+            }
+            h1 {
+                text-align: center;
+                font-family: Arial;
+                color: Navy;
+            }
+            p {
+                margin-left: 300px;
+                margin-right: 300px;
+                font-size: 14pt;
+            }
+
+        </style>
+        
+        <script>
+            function happy(){
+                document.getElementById("SadTxt").innerHTML="";
+            }
+            </script>
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+        <h1>Reflect the Image (20 points)</h1>
+        
+        <p> 
+            There are two images shown below along with two text strings. Create the functionality whereby if you click on the Smiley.jpg image, 
+            the text string "Web Tech Rocks" is shown in red font, size 2em, using Lucida Handwriting with a yellow background. If you click on 
+            frown.jpg image, the string "Web Tech Sucks" is shown in green font, bold, size 2em, and using Arial. When one text string is shown, 
+            the other should not be displayed. Use as many functions as you see necessary to complete this functionality.
+        </p>
+
+        <table>
+            <tr>
+                <td><img src="smiley.jpg" alt="Smiling Face" title="Smile" id="happy" onclick="happy())"/></td>
+                <td id="happyTxt">Web Tech Rocks!</td>
+            </tr>
+            <tr>
+                <td><img src="frown.jpg" alt="Frown Face" title="Sad" /></td>
+                <td id="SadTxt">Web Tech Sucks!</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
